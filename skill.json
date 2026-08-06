@@ -1,0 +1,31 @@
+{
+  "name": "genpark-multi-modal-dataset-synthetic-augmentation-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-modal dataset generator & synthetic image-text data augmentation engine.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "multimodal-dataset",
+    "synthetic-data",
+    "data-augmentation",
+    "vision-training"
+  ],
+  "inputs": {
+    "seed_dataset_path": {
+      "type": "string"
+    },
+    "augmentation_factor": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "synthetic_samples_generated": {
+      "type": "integer"
+    },
+    "quality_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
